@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Google</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 50pt;
+            margin-bottom: 20px;
+        }
+        form{
+            width: 70%;
+            min-width: 500px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        form span.icon{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+        form input.entry{
+            width: 90%;
+            height: 30px;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            padding: 0 10px ;
+        }
+        form input.entry:focus{
+            outline: none;
+        }
+        form > input.enter{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            background-color: skyblue;
+        }
+        div.bar{
+            display: inline-block;
+            width: calc(40px + 80%);
+            height: 38px;
+            background-color: white;
+            border: 1px gray solid;
+            border-radius: 19px;
+            line-height: 38px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: rgba(67,133,245,255)">G</span><span style="color: rgba(236,65,55,255);">o</span><span style="color: rgba(252,188,5,255)">o</span><span style="color: rgba(67,133,245,255)">g</span><span style="color: rgba(52,167,85,255)">l</span><span style="color: rgba(236,65,55,255)">e</span></h1>
+    </header>
+    <section class="content">
+        <form action="https://www.google.com/search">
+            <div class="bar">
+                <span class="icon">🔎</span>
+                <input class="entry" name="q" id="" placeholder="Search Google or type a URL">
+            </div>
+            <input class="enter" type="submit" value="▶">
+        </form>
+    </section>
+</body>
+</html>
